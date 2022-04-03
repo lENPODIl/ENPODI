@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*Estilos formulario*/
+
+
+form{
+    background: #ffffff;
+    width: 100%;                       /*Cuerpo del formulario*/
+    padding: 82px 150px 60px 150px;
+    margin: auto;
+    box-shadow: 2px 2px 6px 2px rgba(255, 255, 255, 0.8);
+} 
+
+.enviado h1{
+    text-align: center;
+    padding: 132px 0px 50px 0px;
+    cursor: pointer;
+}
+
+.enviado h1:hover{
+    color: #5e18ea;
+}
+
+.enviado i{
+    margin: 8px;
+}
+
+
+/*Cabezera*/
+
+header {
+    width: 100%;
+    background: #ffffff;  
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 20%;
+    text-align: right;
+    padding: 10px 10px 10px 20px;
+    background: #5e18ea;
+    position: fixed;
+    z-index: 1;
+}
+
+/*Logo*/
+nav .imagen-logo {
+    width: 100px;
+}
+
+.imagen-logo img{
+    width: 70px;  
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    transition: all .5s ease-in-out;
+}
+
+.imagen-logo img:hover{
+    transform: rotate(360deg) scale(1.2);
+}
+
+/*Menu*/
+.menu{
+    padding: 20px;
+}
+
+.menu > a{
+    color: #ffffffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu > a:hover {
+    box-shadow: 0;
+    box-shadow: 2px 2px 6px 2px rgba(228, 224, 224, 0.5);
+    color: rgb(0, 0, 0);
+    background: white;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+.menu i{
+    width: 2%;
+}
+
+
+/*Seccion Footer*/
+
+footer{
+    background: #5e18ea;
+    height: 260px;
+    padding: 40px;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin:auto;
+    padding-bottom: 40px;
+    border-bottom: 3px solid white;
+}
+
+.seccion-foo{
+    text-align: center;
+}
+
+.seccion-foo i{
+    width: 40px;
+    padding: 10px 5px 10px 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    color: #ffffff;
+}
+
+.seccion-foo i:hover{
+    transform: rotate(360deg) scale(1.6);
+}
+
+.seccion-foo h2 {
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding: 5px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
+    font-size: 20px;
+}
+
+.seccion-foo a{
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 5px 5px;
+    transition: all .5s ease-in-out;
+}
+
+
+.seccion-foo a:hover{
+    color: #000000;
+    background: #ffffff;
+    box-shadow: 0 0 60px 0 rgba(255, 255, 255, 0.861);
+}
+
+.derechos-ENPODI {
+    text-align: center;
+    font-size: 15px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+}
