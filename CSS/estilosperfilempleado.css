@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Cabezera*/
+
+header {
+    width: 100%;
+    height: 150px;
+    background: #ffffff;  
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 14%;
+    text-align: right;
+    padding: 10px 10px 10px 20px;
+    background: #5e18ea;
+    position: fixed;
+    z-index: 1;
+}
+
+/*Logo*/
+nav .imagen-logo {
+    width: 100px;
+}
+
+.imagen-logo img{
+    width: 70px;  
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    transition: all .5s ease-in-out;
+}
+
+.imagen-logo img:hover{
+    transform: rotate(360deg) scale(1.2);
+}
+
+/*Menu*/
+.menu{
+    padding: 20px;
+}
+
+.menu > a{
+    color: #ffffffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu > a:hover {
+    box-shadow: 0;
+    box-shadow: 2px 2px 6px 2px rgba(228, 224, 224, 0.5);
+    color: rgb(0, 0, 0);
+    background: white;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+.menu i{
+    width: 2%;
+}
+
+/*Menu Perfil*/
+
+.menud{
+    display: flex;
+    justify-content: right;
+    margin: 5px 0px 5px 0px;
+    width: 1200px;
+    padding: 0px 10px 40px 0px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.menuca li a{
+    display: block;
+    background: #5e18ea;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    
+}
+
+.menuca li a:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+.menuca > li{
+    float: center;
+}
+
+.menuca li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.menuca li:hover > ul {
+    display: block;
+}
+
+.menuca i {
+    width: 20px;
+}
+
+.menuca a{
+    text-align: center;
+}
+
+/*Principal*/
+
+.principal{
+    padding: 0px 0px 40px 0px;
+}
+
+.contenedor-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-principal{
+    width: 20%;
+    padding: 0px 10px 10px 40px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.imagen-principal:hover{
+    transform: scale(1.2);
+}
+
+.contenedor-principal .textos-principal{
+    width: 70%;
+}
+
+.textos-principal h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 10px 0px 0px 60px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.textos-principal h1:hover{
+    color: #5e18ea;
+}
+
+.textos-principal p{
+    padding: 10px 80px 0px 60px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*Tabla Lista*/
+
+.lista{
+    width: 100%;
+    overflow: hidden;
+    background: #f2f2f2f2; 
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-lista{
+    padding: 60px 0px;
+}
+
+.contenedor-lista h2{
+    padding: 10px 0px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.contenedor-lista h2:hover{
+    color: #5e18ea;
+}
+
+.contenedor-tabla table{
+    border-collapse: collapse;
+    color: #000000;
+    letter-spacing: 0.2px;
+}
+
+.contenedor-tabla td, th{
+    border: 2px solid #000000;
+    text-align: center;
+    padding: 3px 4px;
+}
+
+.contenedor-tabla tr:nth-child(even){
+    background: #000000;
+    color: #ffffff;
+}
+
+.contenedor-tabla tr:hover{
+    background: #5e18ea;
+    color: #ffffff;
+}
+
+.tabla-lista i{
+    padding: 2px 10px;
+}
+
+.tabla-lista i:hover{
+    color: #ffffff;
+}
+
+/*Icono agregar*/
+
+.contenedor-lista #agregar{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    margin: 10px;
+    display: block;
+}
+
+.contenedor-lista #agregar:hover{
+    color: #5e18ea;
+}
+
+.contenedor-lista #agregar >i{
+    transition: all .5s ease-in-out;         /*Icono agregar */
+} 
+
+.contenedor-lista #agregar > i:hover{
+    color: #5e18ea;
+    transform: rotate(360deg) scale(1.2);
+}
+
+.contenedor-lista i{
+    margin: 10px;
+    transition: all .5s ease-in-out;     /*I de iconos dentro de la tabla*/
+}
+
+.contenedor-lista i:hover{
+    transform: rotate(360deg) scale(1.2);
+}
+
+
+
+/*Seccion Footer*/
+
+footer{
+    background: #5e18ea;
+    padding: 40px;
+    height: 260px;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin:auto;
+    padding-bottom: 40px;
+    border-bottom: 3px solid white;
+}
+
+.seccion-foo{
+    text-align: center;
+}
+
+.seccion-foo i{
+    width: 40px;
+    padding: 10px 5px 10px 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    color: #ffffff;
+}
+
+.seccion-foo i:hover{
+    transform: rotate(360deg) scale(1.6);
+}
+
+.seccion-foo h2 {
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding: 5px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
+    font-size: 20px;
+}
+
+.seccion-foo a{
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 5px 5px;
+    transition: all .5s ease-in-out;
+}
+
+
+.seccion-foo a:hover{
+    color: #000000;
+    background: #ffffff;
+    box-shadow: 0 0 60px 0 rgba(255, 255, 255, 0.861);
+}
+
+.derechos-ENPODI {
+    text-align: center;
+    font-size: 15px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+}

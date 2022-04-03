@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*Contenedro chat*/
+
+.chat {
+    width: 700px;
+}
+
+.chat .titulo {
+    background: #5e18ea;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+}
+
+.titulo h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.chat .contenedor-chat {
+    border: 1px solid #efefef;      /*mrgen del contenedor de cada mensaje*/
+    padding: 10px 15px;
+}
+
+/*Contenedor mensajes*/
+
+.chat .contenedor-chat .item {
+    display: flex;
+    float: left;
+    margin: 30px 0;
+}
+
+.chat .contenedor-chat .item .icono {
+    background: #5e18ea;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.chat .contenedor-chat .item .mensaje {
+    background: #5e18ea;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    margin-left: 10px;
+}
+
+.chat .contenedor-chat .item .mensaje p {
+    padding: 4px 0px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.chat .contenedor-chat .item.right {
+    float: right;
+}
+
+.chat .contenedor-chat .item.right .mensaje {
+    background: #efefef;
+    color: #333;
+}
+
+/*Area de texto y boton enviar*/
+
+.chat .texto-mensaje {
+    width: 100%;
+    background: #efefef;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.chat .texto-mensaje .enviar {
+    width: 100%;
+    position: relative;
+}
+
+.chat .texto-mensaje .enviar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    padding-right: 70px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s all ease;
+}
+
+.chat .texto-mensaje .enviar input:focus {
+    border-color: #5e18ea;
+}
+
+.chat .texto-mensaje .enviar button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid #5e18ea;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #5e18ea;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s all ease;
+}
+
+.chat .texto-mensaje .enviar button:hover {
+    background: #5e18ea;
+    color: white;
+}
+
+.chat .texto-mensaje .enviar input:valid ~ button {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.chat .texto-mensaje .enviar a{
+    text-decoration: none;
+    color: #5e18ea;
+}
+
+.chat .texto-mensaje .enviar a:hover{
+    text-decoration: none;
+    color: #ffffffff;
+}

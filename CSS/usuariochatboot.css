@@ -1,0 +1,156 @@
+:root{
+    --colorTextos: #000000;  /*Poner lineas antes de la animacion*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: transparent;
+    font-family: 'Raleway', sans-serif;
+    background: #5e18ea;
+    overflow: hidden;
+}
+
+/*Imagen mitad*/
+
+.contenedor-usuario{
+    display: flex;
+    justify-content: space-evenly;            /*Justificacion del contenedor*/
+    flex-wrap: inherit;
+}
+
+.imagen-mitad img{
+    width: 87%;                   /*Tamaño imagen junto con el fr*/
+}
+
+/*Estilos formulario*/
+
+h1{
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+h1:hover{
+    color: #5e18ea;
+}
+
+
+form{
+    background: #ffffff;
+    width: 50%; 
+    padding: 40px;                      /*Cuerpo del formulario*/
+    margin: 50px 200px;
+    border-radius: 5px;  
+}    
+
+form .grupo{
+    position: relative;              /*organizacion de los recuadros*/
+    margin: 40px;
+}
+
+input, textarea{
+    background: none;
+    color: #20202096;
+    font-size: 15px;
+    padding: 10px 10px 10px 5px;                 /*Estilo del recuadro*/
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    outline: none;                        /*Solo poner una parte del recuadro de llenado de datos*/
+    color: #000000b2;
+}
+
+input:focus~label, 
+input:valid~label, 
+textarea:focus~label, 
+textarea:valid~label{
+    position: absolute;
+    top: -15px;                     /*Hcer peqeuños los titulos de los recuadros*/
+    font-size: 15px;
+    color: #5e18ea;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition:  0.4s ease all;       /*Titulos de los recuadros de texto*/
+    pointer-events: none;
+    color: transparent;
+}
+
+
+.barra{
+    position: relative;      /*Barra de abajo de los recuadros*/
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #5e18ea, hsla(0, 0%, 100%, 0.719)); /*Cambio al hacer de la barra*/
+    transition:  0.4s ease all;
+    left: 0%;
+}
+
+button{
+    width: 40%;
+    background: #ffffff;
+    padding: 5px;
+    align-items: center;
+    border: none;
+    color: black;                /*Botones de enviar y borrar*/
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px 15px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+    cursor: pointer; 
+}
+
+button:hover{
+    background: #5e18ea;        /*Cambio de botones*/
+    color: #ffffff;
+}
+
+button a{
+    color: #000000;
+}
+
+button a:hover{
+    color: #ffffff;
+}
+
+button i{
+    margin: 8px;
+}
+
+.texto-formulario h2{
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+
+.texto-formulario p{
+    font-size: 12px;
+    padding: 15px 5px;
+    text-align: justify;
+}
+
+
+

@@ -1,0 +1,138 @@
+:root{
+    --colorTextos: #000000;  /*Poner lineas antes de la animacion*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+    font-weight: 600;
+}
+
+body{
+    background: #5e18ea;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+h1:hover{
+    color: #5e18ea;
+}
+
+form{
+    background: #ffffff;
+    width: 40%;                       /*Cuerpo del formulario*/
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}    
+
+form .grupo{
+    position: relative;              /*organizacion de los recuadros*/
+    margin: 35px;
+}
+
+input, textarea{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;                 /*Estilo del recuadro*/
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    outline: none;                        /*Solo poner una parte del recuadro de llenado de datos*/
+    color: rgb(146, 143, 143);
+}
+
+input:focus~label, 
+input:valid~label, 
+textarea:focus~label, 
+textarea:valid~label{
+    position: absolute;
+    top: -14px;                     /*Hcer peqeuños los titulos de los recuadros*/
+    font-size: 12px;
+    color: #5e18ea;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition:  0.4s ease all;       /*Titulos de los recuadros de texto*/
+    pointer-events: none;
+}
+
+input:focus~.barra::before,
+textarea:focus~.barra::before{
+    width: 100%;
+}
+
+.barra{
+    position: relative;      /*Barra de abajo de los recuadros*/
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #5e18ea, hsla(0, 0%, 100%, 0.719)); /*Cambio al hacer de la barra*/
+    transition:  0.4s ease all;
+    left: 0%;
+}
+
+button .regresar{
+    color: #000000;
+    text-decoration: none;      /*Boton regresar por que es un a y se uanta por aparte de los otros*/
+    align-items: center;
+    display: contents;
+}
+
+button .regresar:hover{
+    color: #ffffff;         /*Cambio de el boton regresar*/
+    background: #5e18ea;
+}
+
+button{
+    background: #ffffff;
+    padding: 10px;
+    align-items: center;
+    border: none;
+    color: black;                /*Botones de enviar y borrar*/
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px 28px 30px 28px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+    cursor: pointer; 
+}
+
+button:hover{
+    background: #5e18ea;        /*Cambio de botones*/
+    color: #ffffff;
+}
+
+button i{
+    margin: 5px;
+}

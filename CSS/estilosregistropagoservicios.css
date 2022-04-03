@@ -1,0 +1,284 @@
+:root{
+    --colorTextos: #000000;  /*Poner lineas antes de la animacion*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*Estilos formulario*/
+
+
+h1{
+    text-align: center;
+    padding: 140px 100px 0px 100px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+h1:hover{
+    color: #5e18ea;
+}
+
+.contenedor-columna{
+    padding: 50px 0px 0px 0px ;
+}
+
+form{
+    background: #ffffff;
+    width: 100%;                       /*Cuerpo del formulario*/
+    padding: 10px 150px 10px 150px;
+    margin: auto;
+    box-shadow: 2px 2px 6px 2px rgba(255, 255, 255, 0.8);
+    column-count: 2;                    /*Crear las dos columnas*/
+    column-gap: 20px;
+}    
+
+form .grupo{
+    position: relative;              /*organizacion de los recuadros*/
+    margin: 35px;
+}
+
+
+
+input, textarea{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;                 /*Estilo del recuadro*/
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+.bformulario{
+    padding: 0px 250px 0px 250px;
+}
+
+input:focus, textarea:focus{
+    outline: none;                        /*Solo poner una parte del recuadro de llenado de datos*/
+    color: rgb(146, 143, 143);
+}
+
+input:focus~label, 
+input:valid~label, 
+textarea:focus~label, 
+textarea:valid~label{
+    position: absolute;
+    top: -14px;                     /*Hcer peqeuños los titulos de los recuadros*/
+    font-size: 12px;
+    color: #5e18ea;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition:  0.4s ease all;       /*Titulos de los recuadros de texto*/
+    pointer-events: none;
+}
+
+input:focus~.barra::before,
+textarea:focus~.barra::before{
+    width: 100%;
+}
+
+.barra{
+    position: relative;      /*Barra de abajo de los recuadros*/
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #5e18ea, hsla(0, 0%, 100%, 0.719)); /*Cambio al hacer de la barra*/
+    transition:  0.4s ease all;
+    left: 0%;
+}
+
+button{
+    width: 40%;
+    background: #ffffff;
+    padding: 10px;
+    align-items: center;
+    border: none;
+    color: black;                /*Botones de enviar y borrar*/
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px 40px 50px 40px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+    cursor: pointer; 
+}
+
+button:hover{
+    background: #5e18ea;        /*Cambio de botones*/
+    color: #ffffff;
+}
+
+button a{
+    color: #000000;
+}
+
+button a:hover{
+    color: #ffffff;
+}
+
+button i{
+    margin: 8px;
+}
+
+
+.textos-formulario{
+    padding: 20px;
+    text-align: center;
+}
+
+.textos-formulario a{
+    color: #5e18ea;
+}
+
+/*Cabezera*/
+
+header {
+    width: 100%;
+    background: #ffffff;  
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 14%;
+    text-align: right;
+    padding: 10px 10px 10px 20px;
+    background: #5e18ea;
+    position: fixed;
+    z-index: 1;
+}
+
+/*Logo*/
+nav .imagen-logo {
+    width: 100px;
+}
+
+.imagen-logo img{
+    width: 70px;  
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    transition: all .5s ease-in-out;
+}
+
+.imagen-logo img:hover{
+    transform: rotate(360deg) scale(1.2);
+}
+
+/*Menu*/
+.menu{
+    padding: 20px;
+}
+
+.menu > a{
+    color: #ffffffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu > a:hover {
+    box-shadow: 0;
+    box-shadow: 2px 2px 6px 2px rgba(228, 224, 224, 0.5);
+    color: rgb(0, 0, 0);
+    background: white;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+.menu i{
+    width: 2%;
+}
+
+
+/*Seccion Footer*/
+
+footer{
+    background: #5e18ea;
+    height: 260px;
+    padding: 40px;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin:auto;
+    padding-bottom: 40px;
+    border-bottom: 3px solid white;
+}
+
+.seccion-foo{
+    text-align: center;
+}
+
+.seccion-foo i{
+    width: 40px;
+    padding: 10px 5px 10px 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    color: #ffffff;
+}
+
+.seccion-foo i:hover{
+    transform: rotate(360deg) scale(1.6);
+}
+
+.seccion-foo h2 {
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding: 5px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
+    font-size: 20px;
+}
+
+.seccion-foo a{
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 5px 5px;
+    transition: all .5s ease-in-out;
+}
+
+
+.seccion-foo a:hover{
+    color: #000000;
+    background: #ffffff;
+    box-shadow: 0 0 60px 0 rgba(255, 255, 255, 0.861);
+}
+
+.derechos-ENPODI {
+    text-align: center;
+    font-size: 15px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+}
