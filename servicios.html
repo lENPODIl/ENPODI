@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Banner de Servicios" content="ENPODI">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilosservicios.css">
+    <link rel="shortcut icon" href="images/LogoENPODI.jpeg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a01a75bbd0.js" crossorigin="anonymous"></script>
+    <title>Servicios</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!--Menu principal-->
+           <section class="imagen-logo">
+               <a href="index.html"><img src="images/LogoENPODI2.jpeg" alt=""></a>
+           </section>
+
+           <section class="menu">
+               <a href="index.html">Inicio<i class="fas fa-home"></i></a>
+               <a href="contacto.html">Contacto<i class="fas fa-phone"></i></a>
+               <a href="#service">Solicitar Servicios<i class="fa-solid fa-hand-point-up"></i></a>
+               <a href="iniciosesion.html">Iniciar Sesion<i class="fas fa-circle-user"></i></a>
+           </section>
+       </nav>
+    </header>
+
+    <main>
+        <section class="tarjetas">
+
+            <h2 class="titulo">Servicos que Ofrece ENPODI</h2>
+    
+            <section class="contenedor-banner"> 
+                <a href="serviciovalidea.html">
+                    <div class="banner">
+                        <h1>Validacion de idea de negocio</h1>
+                        <p>El servicio se basa en validar la idea sobre la que gira todo el entorno del negocio, conociendo todos los pros 
+                            y contras de lo que se prsenta. Toda esta validacion es para saber que tan acertada o viable es la porpuesta 
+                            que el...
+                        </p>
+                    </div> 
+                </a>
+                
+            </section>
+    
+            <section class="contenedor-banner"> 
+                <a href="serviciocremar.html">
+                    <div class="banner">
+                        <h1>Creacion y desarrollo de marca</h1>
+                        <p>El servicio que ofrecemos interviene desde el comienzo de la marca, desarrollandola basandonos es en los requerimeintos 
+                            que el cliente necesite para su negocio, encragandonos de mantener la proyeccion que este mismo...
+                        </p>
+                    </div>   
+                </a> 
+                         
+            </section>
+    
+            <section class="contenedor-banner"> 
+                <a href="serviciotransdigi.html">
+                    <div class="banner">
+                        <h1>Transformacion digital</h1>
+                        <p>El servicio nos permite intervenir en la estructura general del negocio para marcar pauta en la forma que este esta 
+                            desarrollando su trabajo ya sea de forma tradicional o digital, para que de esta manera podamos trabajar... 
+                        </p>
+                    </div>     
+                </a>       
+            </section>
+    
+            <section class="contenedor-banner"> 
+                <a href="servicioestrapo.html">
+                    <div class="banner">
+                        <h1>Estrategia de posicionamiento</h1>
+                        <p>El servicio que ofrecemos se basa en utilizar distintas estrategias que permitan mejorar o posicionar el modelo de 
+                            negocio que tenga el cliente dentro del entorno digital, tal como lo puede ser dentro de navegadores...
+                        </p>
+                    </div>  
+                </a>          
+            </section>  
+        
+            <section class="contenedor-banner"> 
+               <a href="serviciosaltra.html">
+                <div class="banner">
+                    <h1>Sales training</h1>
+                    <p>El servicio que ofrecemos se desenvuelve en el ambito de empresa-cliente seindo de esta manera que podemos aesorar, 
+                        capacitar y preparar a nuestros clientes para que pueda mejorar la estructura de su negocio en cuanto a ventas...
+                    </p>
+                </div> 
+               </a>           
+            </section>
+    
+        </section>
+
+        <section class="formulario-chat" id="service">
+
+            <form action="" method="POST">   <!--Vinculo con el archivo PHP para el envio en action-->
+                <h1>Solicitar servicio</h1>
+                
+                <div class="grupo">
+                    <input type="email" name="email" id="" required><span class="barra"></span>
+                    <label>Email</label>
+                </div>
+
+                <div class="grupo">
+                    <p> Tipo Servicio</p>
+                    <select>
+                        <option selected>--------------------------------------------------</option>
+                        <option value="">Validación de idea de negocio</option>
+                        <option value="">Creación y Desarrollo de Marca</option>
+                        <option value="">Transformación Digital</option>
+                        <option value="">Estrategia de Posicionamiento</option>
+                        <option value="">Estrategia de Posicionamiento</option>
+                    </select>
+                </div>
+    
+                <div class="grupo">
+                    <textarea name="asunto" id="" rows="3" required></textarea><span class="barra"></span>
+                    <label>Asunto</label>
+                </div>
+    
+                <div class="botonoes-formulario">
+                    <button type="submit" onclick="location.href='ventanaenviado.html';">Solicitar<i class="fa-solid fa-thumbs-up"></i></button>
+                    <button type="reset">Cancelar<i class="fas fa-thumbs-down"></i></button>
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer>                                       
+        <div class="contenedor-footer">
+             <div class="seccion-foo">
+                 <i class="fa-brands fa-whatsapp"></i>
+                 <h2>WhatsApp</h2>
+                 <a href="https://api.whatsapp.com/send?phone=525624178371&text=¡Hola!%20¿me%20podrian%20ayudar?" target="_blank">5624178371</a>
+             </div>
+ 
+             <div class="seccion-foo">
+                 <i class="fas fa-envelope"></i>
+                 <h2>Correo</h2>
+                 <a href="correo.html">ventas@enpodi.com</a>
+             </div>
+ 
+         </div>
+ 
+         <div class="derechos-ENPODI">
+             <h2>&#169 | ENPODI |</h2>
+         </div>
+ 
+     </footer>
+    
+</body>
+</html>
