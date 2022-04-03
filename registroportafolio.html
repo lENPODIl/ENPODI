@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Formulario" content="ENPODI">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilosregistroportafolio.css">
+    <link rel="shortcut icon" href="images/LogoENPODI.jpeg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a01a75bbd0.js" crossorigin="anonymous"></script>
+    <title>Registro Empleado</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+             <!--Menu principal-->
+            <section class="imagen-logo">
+                <a href="index.html"><img src="images/LogoENPODI2.jpeg" alt=""></a>
+            </section>
+
+            <section class="menu">
+                <a href="index.html">Inicio <i class="fas fa-home"></i></a>
+                <a href="perfilempleado.html">Regresar al Perfil<i class="fa-solid fa-address-card"></i></i></a>
+            </section>
+        </nav>
+
+    </header>
+
+    <section class="titulo-registro">
+        <h1>Solicitar un Nuevo Servicio Para el Portafolio</h1>
+    </section>
+
+    <form action="" method="POST">   <!--Vinculo con el archivo PHP para el envio en action-->
+
+        <div class="grupo">
+            <input type="text" name="folio" required><span class="barra"></span>
+            <label>Folio</label>
+        </div>
+
+        <div class="grupo">               
+            <input type="date" name="correo" required><span class="barra"></span>
+            <label>Fecha de Contratacion</label>
+        </div>
+
+        <div class="grupo">
+            <input type="number" name="contraseña" required><span class="barra"></span>
+            <label>Precio</label>
+        </div>
+
+
+        <section class="contenedor-columna">
+            <div class="grupo">
+                <p>Departamento</p>
+                <select>
+                    <option selected>-------------------------------------------------------------------------</option>
+                    <option value="">Base de Datos</option>
+                    <option value="">Logotipo</option>
+                    <option value="">Propaganda</option>
+                    <option value="">Sistema Publicitario</option>
+                    <option value="">Campaña</option>
+                </select>
+            </div>
+    
+            <div class="grupo">
+                <p> Tipo Servicio</p>
+                <select>
+                    <option selected>--------------------------------------------------------------------------</option>
+                    <option value="">Validación de idea de negocio</option>
+                    <option value="">Creación y Desarrollo de Marca</option>
+                    <option value="">Transformación Digital</option>
+                    <option value="">Estrategia de Posicionamiento</option>
+                    <option value="">Estrategia de Posicionamiento</option>
+                </select>
+            </div>
+
+        </section>        
+
+    </form>
+
+    <section class="bformulario">
+        <div class="botonoes-formulario">      <!--Convertir en un a el button vincularlo-->
+            <button type="submit" value="Iniciar" onclick="location.href='perfil.html';">Crear Registro<i class="fa-solid fa-user-check"></i></button>
+            <button type="reset">Borrar Registro<i class="fas fa-trash"></i></button>
+        </div>
+    </section>
+
+    <footer>                                       
+         <div class="contenedor-footer">
+            <div class="seccion-foo">
+                <i class="fa-brands fa-whatsapp"></i>
+                <h2>WhatsApp</h2>
+                <a href="https://api.whatsapp.com/send?phone=525624178371&text=¡Hola!%20¿me%20podrian%20ayudar?" target="_blank">5624178371</a>
+            </div>
+
+            <div class="seccion-foo">
+                <i class="fas fa-envelope"></i>
+                <h2>Correo</h2>
+                <a href="correo.html">ventas@enpodi.com</a>
+            </div>
+
+        </div>
+
+        <div class="derechos-ENPODI">
+            <h2>&#169 | ENPODI |</h2>
+        </div>
+
+    </footer>
+
+    
+</body>
+</html>

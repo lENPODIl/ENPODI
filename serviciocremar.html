@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Marketing Digital" content="ENPODI">
+    <meta name="ENPODI" content="United Netwoks">
+    <link rel="stylesheet" href="CSS/estilosbanerservicios.css">
+    <link rel="shortcut icon" href="images/LogoENPODI.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a01a75bbd0.js" crossorigin="anonymous"></script>
+    <title>Creacion y Desarrollo de Marca</title>
+</head>
+<body>
+    <header>
+        <nav>
+             <!--Menu principal-->
+            <section class="imagen-logo">
+                <a href="index.html"><img src="images/LogoENPODI2.jpeg" alt=""></a>
+            </section>
+
+            <section class="menu">
+                <a href="servicios.html">Servicios<i class="fa-solid fa-hand-point-up"></i></a>
+                <a href="#">Servicio<i class="fas fa-home"></i></a>
+                <a href="#pago">Como Pagar<i class="fa-solid fa-money-check-dollar"></i></a>
+                <a href="#formulariopa">Pagar Servicio<i class="fa-solid fa-hand-holding-hand"></i></a>
+            </section>
+        </nav>
+
+    <main>
+
+        <section class="principal">
+            <div class="contenedor-principal">
+    
+                <div class="textos-principal">
+                    <h1>Creacion y Desarrollo de Marca</h1>
+                    <p>El servicio que ofrecemos interviene desde el comienzo de la marca,
+                        desarrollandola basandonos es en los requerimeintos que el cliente
+                        necesite para su negocio, encragandonos de mantener la proyeccion que 
+                        este mismo tiene para proponer la idea sobre el trabajo que relizemos...  
+                    </p>
+
+                    <div class="boton-principal">
+                        <a href="usuariochatboot.html">Resuelve Tus Dudas Con Nuestro ChatBot<i class="fa-brands fa-discord"></i></a>
+                    </div>
+
+                </div>
+                <img src="images/Equipo.jpg" alt="" class="imagen-principal">
+            </div>
+        </section>
+
+        <section class="principal" id="pago">
+            <div class="contenedor-principal">
+                    <img src="images/comprarservicio.svg" alt="" class="imagen-principal">
+                <div class="textos-principal">
+                    <h1>Como Contrato El Servicio</h1>
+                    <p>Para contratar un servicio previamente debes solicitarlo para que puedas
+                        tener acceso a una cuenta de usuario y de esta forma puedas pasar a este 
+                        paso.<br>
+
+                        <br>Si ya solicitaste el servicio lo unico que queda es reyenar el formulario
+                        con los datos proporcionados por ENPODI y tus datos, posteriormente ingresar 
+                        con tu cuenta de PayPal y proceder a pagar el costo del servicio. Esto se 
+                        vera posteriormente reflejado en tu cuenta y podras consultarlo
+                        cuando quieras en tu portafolio de servicios. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="titulo-registro" id="formulariopa">
+            <h3>Pagar Servicio</h3>
+        </section>
+    
+        <form action="" method="POST">   <!--Vinculo con el archivo PHP para el envio en action-->
+    
+            <div class="grupo">
+                <input type="text" name="folio" required><span class="barra"></span>
+                <label>Folio</label>
+            </div>
+    
+            <div class="grupo">               
+                <input type="email" name="correo" required><span class="barra"></span>
+                <label>Correo</label>
+            </div>
+    
+            <div class="grupo">
+                <input type="password" name="contraseña" required><span class="barra"></span>
+                <label>Contraseña</label>
+            </div>
+
+            <section class="contenedor-columna">
+                <div class="grupo">
+                    <input type="number" name="precio" required><span class="barra"></span>
+                    <label>Precio</label>
+                </div>
+        
+                <div class="grupo">
+                    <input type="date" name="fecha" required><span class="barra"></span>
+                    <label>Fecha de Conratacion</label>
+                </div>
+    
+            </section>  
+    
+        </form>
+
+        <section class="bformulario">
+            <div class="botonoes-formulario">      <!--Convertir en un a el button vincularlo-->
+                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NUQNDYD5PH8KN"><button type="submit" value="Iniciar"> Pagar Servicio<i class="fa-solid fa-circle-dollar-to-slot"></i></button></a>
+                <button type="reset">Cancelar<i class="fa-solid fa-rectangle-xmark"></i></button>
+            </div>
+        </section>
+    
+
+    </main>
+
+    <footer>                                       
+       <div class="contenedor-footer">
+            <div class="seccion-foo">
+                <i class="fa-brands fa-whatsapp"></i>
+                <h2>WhatsApp</h2>
+                <a href="https://api.whatsapp.com/send?phone=525624178371&text=¡Hola!%20¿me%20podrian%20ayudar?" target="_blank">5624178371</a>
+            </div>
+
+            <div class="seccion-foo">
+                <i class="fas fa-envelope"></i>
+                <h2>Correo</h2>
+                <a href="correo.html">ventas@enpodi.com</a>
+            </div>
+
+        </div>
+
+        <div class="derechos-ENPODI">
+            <h2>&#169 | ENPODI |</h2>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
